@@ -253,12 +253,12 @@ endif()
 # 'DCMQICPackOptions.cmake' and 'dcmqiVersionConfigure.h'
 #
 
-#message("---------")
+message(STATUS "-------------------------------------------------------")
 message(STATUS "Targets '${PkModeling_TARGETS}'")
-#message("---------")
+message(STATUS "-------------------------------------------------------")
 
 include(pkmodelingConfigureVersionTarget)
-add_dependencies(pkmodeling pkmodelingConfigureVersion)
+add_dependencies(PkModeling PkModelingConfigureVersion)
 
 #-----------------------------------------------------------------------------
 # PkModelingConfig
